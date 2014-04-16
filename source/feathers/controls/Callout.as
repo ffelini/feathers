@@ -1902,6 +1902,7 @@ package feathers.controls
 			//based on touches.
 			this._isReadyToClose = false;
 			this.addEventListener(EnterFrameEvent.ENTER_FRAME, callout_oneEnterFrameHandler);
+			this.stage.addEventListener(TouchEvent.TOUCH, stage_touchHandler);
 		}
 
 		/**
